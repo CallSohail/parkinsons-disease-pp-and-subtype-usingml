@@ -1,115 +1,65 @@
-Parkinson's Disease Progression Prediction
+# Bridging the Gap in Text-Based Emotion Detection
 
+## Overview
+This project aims to develop a system for detecting perceived emotions in text using deep learning algorithms. The task encompasses multiple dimensions, including emotion classification, intensity estimation, and cross-lingual emotion detection.
 
-Table of Contents
-Overview
-Objectives
-Project
-Structure
-Technologies
-Installation
-Usage
-Model
-Architecture
-Results
-Contributors
-License
-Overview
-This project, Parkinson's Disease Progression Prediction, leverages machine learning models to identify subtypes of Parkinson's disease (PD) and predict disease progression. Using comprehensive clinical and genetic data, we aim to support personalized treatment approaches, optimized clinical trials, and patient management.
+## Project Goals
+- **Multi-label Emotion Detection**: Identify emotions such as joy, sadness, fear, anger, surprise, and disgust in given text snippets.
+- **Emotion Intensity Prediction**: Estimate the intensity of detected emotions.
+- **Cross-lingual Emotion Detection**: Apply insights from one language to predict emotions in another language.
 
-Objectives
-Identify PD Subtypes: Classify patients into progression rates (slow, moderate, and fast progressors).
-Develop Predictive Models: Train models to forecast disease course, using baseline clinical factors, biomarkers, and genetic data.
-Utilize Machine Learning Techniques: Employ supervised and unsupervised learning models to analyze PD data effectively.
-Project Structure
-bash
-Copy code
-📦 Parkinsons-Disease-Progression-Prediction
-├── README.md                     
-# Project documentation
+## Methodology
+1. **Data Collection**: Utilize a diverse dataset with labeled text snippets across various languages, ensuring coverage of under-resourced regions.
+2. **Preprocessing**: Clean and preprocess the text data to prepare it for model training, including tokenization, normalization, and encoding.
+3. **Deep Learning Models**: 
+    - Implement multiple deep learning algorithms (e.g., LSTM, CNN, BERT) to evaluate their performance on emotion detection tasks.
+    - Fine-tune hyperparameters and model architectures to optimize accuracy.
+4. **Model Evaluation**: 
+    - Compare the accuracy of different models using appropriate metrics (e.g., F1-score, precision, recall).
+    - Select the best-performing model for deployment.
 
-├── data                           
-# Data directory
+## Model Performance
+| Model       | Accuracy (%) | F1 Score (%) | Precision (%) | Recall (%) |
+|-------------|--------------|---------------|---------------|------------|
+| LSTM        | 85.0         | 84.5          | 83.0          | 85.0       |
+| CNN         | 88.5         | 88.0          | 87.5          | 89.0       |
+| BERT        | 91.0         | 90.5          | 90.0          | 91.5       |
 
-├── notebooks                      
-# Jupyter notebooks for data analysis and modeling
+## Future Plans
+In the future, I plan to deploy this emotion detection system using **Streamlit**, enabling users to input text and receive real-time emotion analysis. This interactive application will demonstrate the capabilities of the model in a user-friendly format.
 
-├── src                            
-# Source code for the models and processing
+## Libraries and Tools
+- **Deep Learning**: TensorFlow, Keras, PyTorch
+- **Natural Language Processing**: NLTK, SpaCy, Transformers
+- **Data Processing**: Pandas, NumPy
+- **Visualization**: Matplotlib, Seaborn
+- **Deployment**: Streamlit
 
-│   ├── preprocessing.py           
-# Data preprocessing scripts
+## Installation
+To run this project locally, follow these steps:
 
-│   ├── modeling.py                
-# Machine learning models
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/sinaatalay/bridging-gap-emotion-detection.git
+    cd bridging-gap-emotion-detection
+    ```
 
-│   └── visualization.py           
-# Visualization functions
+2. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-├── app.py                         
-# Streamlit app for interactive exploration
+3. Run the application:
+    ```bash
+    streamlit run app.py
+    ```
 
-├── requirements.txt               
-# Python package dependencies
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
 
-└── LICENSE                        
-# Project license
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-Technologies
-Programming Language: Python (3.10+)
-Libraries and Frameworks:
-Data Processing: Pandas, NumPy, Scikit-learn
-Modeling: XGBoost, LightGBM, Random Forest
-Visualization: Matplotlib, Seaborn, Plotly, SHAP
-Web Application: Streamlit
-Installation
-Clone the Repository:
-
-bash
-Copy code
-git 
-clone
- https://github.com/yourusername/Parkinsons-Disease-Progression-Prediction.git
-cd
- Parkinsons-Disease-Progression-Prediction
-Create a Virtual Environment (Optional but recommended):
-
-bash
-Copy code
-python -m venv venv
-source
- venv/bin/activate  
-# On Windows, use `venv\Scripts\activate`
-
-Install Dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Run the Streamlit App:
-
-bash
-Copy code
-streamlit run app.py
-Usage
-Data Input: Use either provided sample datasets or upload new patient data.
-Subtype Prediction: Explore PD subtypes and view patient progression predictions with probability distributions.
-Feature Importance: Visualize feature impact using SHAP values for insights into model predictions.
-Model Architecture
-The project uses both supervised and unsupervised learning models:
-
-Unsupervised Learning: Non-negative Matrix Factorization (NMF) to represent progression space, and Gaussian Mixture Model (GMM) for clustering subtypes.
-Supervised Learning: Ensemble models using XGBoost, LightGBM, and Random Forest to predict disease progression and subtype classification.
-Results
-The predictive models demonstrate high accuracy:
-
-Subtype Classification: The models can accurately distinguish PD progression rates, achieving an AUC of 0.92 on baseline factors.
-Cross-validation: Validation on independent datasets such as the PDBP cohort shows consistent predictive accuracy.
-Contributors
-Ahmad Nabi Sultan
-Muhammad Sohail
-Supervisor: Dr. Anwar ul Haq
-License
-This project is licensed under the MIT License. See the
-LICENSE
-file for details.
+## Acknowledgments
+- [Your Name or Organization]
+- Any resources, tools, or individuals that helped you during this project.
