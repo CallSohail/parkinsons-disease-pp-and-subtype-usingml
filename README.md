@@ -1,5 +1,4 @@
-# Parkinson's Disease Progression Prediction  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)  [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
-
+# Parkinson's Disease Progression Prediction 
 ## Table of Contents
 - [Overview](#overview)
 - [Objectives](#objectives)
@@ -36,10 +35,7 @@ This project, *Parkinson's Disease Progression Prediction*, leverages machine le
 ├── requirements.txt               # Python package dependencies
 └── LICENSE                        # Project license
 
-
-Got it! Here’s the complete README file including all the text you provided, compiled into one section without breaking it down into categories:
-
-```markdown
+```
 # Parkinson's Disease Progression Prediction
 
 This project, *Parkinson's Disease Progression Prediction*, leverages machine learning models to identify subtypes of Parkinson's disease (PD) and predict disease progression. Using comprehensive clinical and genetic data, we aim to support personalized treatment approaches, optimized clinical trials, and patient management.
@@ -81,7 +77,7 @@ To run this project locally, follow these steps:
 ## Model Architecture
 The project uses both supervised and unsupervised learning models:
 - Unsupervised Learning: Non-negative Matrix Factorization (NMF) to represent progression space, and Gaussian Mixture Model (GMM) for clustering subtypes.
-- Supervised Learning: Ensemble models using XGBoost, LightGBM, and Random Forest to predict disease progression and subtype classification.
+- Supervised Learning: Ensemble XGBoost, LightGBM, and Random Forest models to predict disease progression and subtype classification.
 
 ## Results
 The predictive models demonstrate high accuracy:
@@ -98,20 +94,4 @@ The predictive models demonstrate high accuracy:
 - Ahmad Nabi Sultan
 - Muhammad Sohail
 - Supervisor: Dr. Anwar ul Haq
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-### Instructions:
-- Replace `yourusername` with your actual GitHub username.
-- Copy and paste the entire block into your `README.md` file.
-
-### Key Points
-- Ensure to replace the placeholder `yourusername` with your actual GitHub username.
-- This README file now includes everything you specified in a single block.
-```
-
-You can copy and paste this entire block into your `README.md` file. Let me know if you need any more modifications!
 
